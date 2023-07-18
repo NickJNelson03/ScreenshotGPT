@@ -11,15 +11,15 @@ def extract_text_from_image(image_path):
 openai.api_key = 'YOUR_API_KEY'  # Replace with your actual API key
 
 # Extract text from the image
-image_path = '/path/to/your/image.png' #replace image with the name of your photo
+image_path = '/path/to/your/image.png' # Replace image with the name of your photo
 extracted_text = extract_text_from_image(image_path)
 
 # Generate a response from ChatGPT
 response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
-        {"role": "system", "content": "You are a helpful assistant. Give key points and critical information."},
-        {"role": "user", "content": extracted_text}
+        {"role": "system", "content": "You are a helpful assistant. Give key points and critical information."}, # What would you like it to do for you
+        {"role": "user", "content": extracted_text} # Extracting the text as a huge chunk(large strings) or one big text(one large string)
     ]
 )
 
