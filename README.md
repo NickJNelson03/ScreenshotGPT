@@ -57,7 +57,3 @@ Contributions to this project are welcome! If you find any issues or have sugges
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any questions or inquiries, please contact [your-email@example.com](mailto:your-email@example.com).
